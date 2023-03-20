@@ -1,0 +1,1 @@
+let rec mcd (x,y)=if x>=0 && y >=0 && (x<>0 || y<>0)then  if x>y then if x mod y = 0 then  if x mod (x/y) = 0 && y mod (x/y)=0 then x/y else y else if x mod (x mod y) =0 then x mod y else 1 else mcd (y,x) else 0;;
